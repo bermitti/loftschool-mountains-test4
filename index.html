@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="./assets/styles/app.min.css"/>
+    <title>Главная страница</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="welcome">
+        <header class="welcome__header">
+          <div class="welcome__login">
+            <button class="btn-login">Авторизироваться</button>
+          </div>
+        </header>
+        <section class="welcome__content">
+          <div class="welcome__flipper">
+            <div class="flipper">
+              <div class="flipper__front">
+                <!--cтили в .welcome__user , а .user можно вынести миксином  -->
+                <div class="welcome__user user">
+                  <div class="user__pic"><img class="user__pic-img" src="assets/images/elem/user.png" alt=""/></div>
+                  <div class="user__info">
+                    <div class="user__name">Владимир Астахов</div>
+                    <div class="user__data">Личный сайт разработчика</div>
+                  </div>
+                </div>
+                <div class="welcome__socials">
+                  <!--блок без позиционирования. сделать потом миксином.-->
+                  <ul class="socials">
+                    <li class="socials__item"><a class="socials__link" href="https://vk.com/id431828997">
+                        <svg class="socials__icon socials__icon_welcome">
+                          <use xlink:href="assets/images/icons/sprite/sprite.svg#vk"></use>
+                        </svg></a></li>
+                    <li class="socials__item"><a class="socials__link" href="https://github.com/bermitti/gulp-build"> 
+                        <svg class="socials__icon socials__icon_welcome">     
+                          <use xlink:href="assets/images/icons/sprite/sprite.svg#github">                            </use>
+                        </svg></a></li>
+                    <li class="socials__item"><a class="socials__link" href="#">
+                        <svg class="socials__icon socials__icon_welcome">
+                          <use xlink:href="assets/images/icons/sprite/sprite.svg#in"></use>
+                        </svg></a></li>
+                  </ul>
+                </div>
+                <div class="welcome__buttons">
+                  <ul class="nav__list nav__list_welcome">
+                    <li class="nav__item"><a class="nav__link nav__link_welcome" href="my_works.html">Мои работы</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link_welcome" href="about.html">Обо мне</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link_welcome" href="blog.html">Блог</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="flipper__back">
+                <div class="welcome__title">
+                  <div class="block-subtitle block-subtitle_welcom">Авторизируйтесь</div>
+                </div>
+                <div class="welcome__login-form">
+                  <form class="form" id="login" action="" method="post">
+                    <div class="form__field">
+                      <div class="form__field-icon"></div>
+                      <input class="form__input form__input_login" type="login" name="login" placeholder="Логин"/>
+                    </div>
+                    <div class="form__field">
+                      <div class="form__field-icon"></div>
+                      <input class="form__input form__input_password" type="password" name="password" placeholder="Пароль"/>
+                    </div>
+                    <div class="form__row">
+                      <div class="form__checkbox">
+                        <input id="robot" type="checkbox" name="robot"/>
+                        <label for="robot">Я человек
+                          <div class="checkbox-fake"></div>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="form__line-title">Вы точно не робот?</div>
+                    <div class="form__row">
+                      <div class="form__radio">
+                        <input id="robot-radio-1" type="radio" name="robot-radio"/>
+                        <label for="robot-radio-1">Да
+                          <div class="radio-fake"></div>
+                        </label>
+                      </div>
+                      <div class="form__radio">
+                        <input id="robot-radio-2" type="radio" name="robot-radio"/>
+                        <label for="robot-radio-2">Не уверен
+                          <div class="radio-fake"></div>
+                        </label>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="welcome__buttons-back">
+                  <ul class="nav__list nav__list-welcome-back">
+                    <li class="nav__item nav__item_welcome-back"><a class="nav__link nav__link_welcome-back" href="index.html">На главную</a></li>
+                    <li class="nav__item nav__item_welcome-back"><a class="nav__link nav__link_welcome-back" href="#">Войти</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer class="welcome__footer">
+          <div class="welcome__footer-copyright">
+            <p>© Владимир Астахов | создано с любовью в LoftSchool | 2017</p>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="assets/scripts/bundle.js" defer="defer"></script>
+  </body>
+</html>
