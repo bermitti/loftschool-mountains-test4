@@ -18,7 +18,7 @@
             <circle class="circle__spinner-2" r="29" cx="50%" cy="50%" transform="rotate(30 55 55)" stroke="white" fill="transparent" stroke-width="3" stroke-dasharray="100 360"></circle>
           </svg>
         </div>
-        <div class="loader__text"><span class="loaded">100%</span></div>
+        <div class="loader__text"><span class="loaded">0%</span></div>
       </div>
     </div>
     <div class="wrapper">
@@ -97,10 +97,75 @@
             <div class="block-title">Мои работы   </div>
           </div>
         </div>
-        <div class="slider">
-          <div class="slider__info">Инфа</div>
-          <div class="slider__display">Картинка</div>
-          <div class="slider__btns">кнопки                   </div>
+        <div class="my-works__slider">
+          <div class="slider">
+            <div class="slider__description">
+              <div class="project">
+                <ul class="project__list">
+                  <li class="project__item active">
+                    <div class="project__title">
+                      <div class="block-subtitle project__title_subtitle">Сайт школы онлайн образования</div>
+                    </div>
+                    <div class="project__technologies">HTML, CSS, JAVASCRIPT</div>
+                    <div class="project__link"><a class="project__buttom">Посмотреть сайт</a></div>
+                  </li>
+                  <li class="project__item">
+                    <div class="project__title">
+                      <div class="block-subtitle project__title_subtitle">Сайт школы йоги</div>
+                    </div>
+                    <div class="project__technologies">HTML, CSS, JAVASCRIPT</div>
+                    <div class="project__link"><a class="project__buttom">Посмотреть сайт</a></div>
+                  </li>
+                  <li class="project__item">
+                    <div class="project__title">
+                      <div class="block-subtitle project__title_subtitle">Сайт дизайна интерьеров</div>
+                    </div>
+                    <div class="project__technologies">HTML, CSS, JAVASCRIPT</div>
+                    <div class="project__link"><a class="project__buttom">Посмотреть сайт</a></div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="slider__image-slide">
+              <div class="image-slide">
+                <ul class="image-slide__list">
+                  <li class="image-slide__item active"><img class="slider-img" src="./assets/images/elem/my-work_1.png" alt="" srcset=""/></li>
+                  <li class="image-slide__item"><img class="slider-img" src="./assets/images/elem/my-work_2.png" alt="" srcset=""/></li>
+                  <li class="image-slide__item"><img class="slider-img" src="./assets/images/elem/my-work_3.png" alt="" srcset=""/></li>
+                </ul>
+              </div>
+            </div>
+            <div class="slider__controls"> 
+              <div class="controls controls__prev">
+                <div class="controls__arrow">
+                  <svg class="controls__pic">
+                    <use xlink:href="assets/images/icons/sprite/sprite.svg#arrow_down"></use>
+                  </svg>
+                </div>
+                <div class="controls__bg">
+                  <ul class="controls__bg-list">
+                    <li class="controls__bg-item"><img class="slider-img" src="./assets/images/elem/my-work_1.png" alt="" srcset=""/></li>
+                    <li class="controls__bg-item"><img class="slider-img" src="./assets/images/elem/my-work_2.png" alt="" srcset=""/></li>
+                    <li class="controls__bg-item active"><img class="slider-img" src="./assets/images/elem/my-work_3.png" alt="" srcset=""/></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="controls controls__next">  
+                <div class="controls__arrow">
+                  <svg class="controls__pic">
+                    <use xlink:href="assets/images/icons/sprite/sprite.svg#portf_arrow_up"></use>
+                  </svg>
+                </div>
+                <div class="controls__bg">
+                  <ul class="controls__bg-list">
+                    <li class="controls__bg-item"><img class="slider-img" src="./assets/images/elem/my-work_1.png" alt="" srcset=""/></li>
+                    <li class="controls__bg-item active"><img class="slider-img" src="./assets/images/elem/my-work_2.png" alt="" srcset=""/></li>
+                    <li class="controls__bg-item"><img class="slider-img" src="./assets/images/elem/my-work_3.png" alt="" srcset=""/></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section class="section section__mentions">
@@ -162,15 +227,15 @@
                   <div class="block-subtitle block-subtitle_feadback">Связаться со мной</div>
                 </div>
                 <div class="feedback__form">
-                  <form class="form" id="feedback-form" method="POST" action="">
+                  <form class="form" id="feedback-form" method="POST" action="" required="required">
                     <div class="form__field">
-                      <input class="form__input" type="text" id="name" name="name" placeholder="Имя"/>
+                      <input class="form__input" type="text" id="name" name="name" placeholder="Имя" required="required"/>
                     </div>
                     <div class="form__field">
-                      <input class="form__input" type="email" id="email" name="email" placeholder="Email"/>
+                      <input class="form__input" type="email" id="email" name="email" placeholder="Email" required="required"/>
                     </div>
                     <div class="form__field">
-                      <textarea class="form__input" type="text" id="message" name="message" rows="5" resize:="resize:" none="none" placeholder="Ваше сообщение"></textarea>
+                      <textarea class="form__input" type="text" id="message" name="message" rows="5" resize:="resize:" none="none" placeholder="Ваше сообщение" required="required"></textarea>
                     </div>
                   </form>
                 </div>
